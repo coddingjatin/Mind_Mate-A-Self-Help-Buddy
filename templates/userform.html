@@ -1,0 +1,36 @@
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <div class="user-form">
+    <div class="row">
+      <form method="post" action="" enctype="multipart/form-data" novalidate>
+      {% csrf_token %}
+      <div class="row">
+        <div class="col-12 form-group">
+          {{ user_form.username|as_crispy_field }}
+        </div>
+        <div class="col-12">
+          {{ user_form.email|as_crispy_field }}
+        </div>
+        <div class="col-12">
+          {{ user_form.password|as_crispy_field }}
+        </div>
+         <div class="col-12">
+          {{ profile_form.phone|as_crispy_field }}
+        </div>
+        <div class="col-12">
+          {{ profile_form.age|as_crispy_field }}
+        </div>
+        <div class="col-12">
+          {{ profile_form.region|as_crispy_field }}
+        </div>
+      </div>
+      <br>
+     <button type="submit" name="_submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+     <div class="user-account">
+       <span>if already having an account:</span><a href={% url 'login' %}> Login</a>
+    </div>
+  </form>
+</div>
+</div>
+{% endblock %}

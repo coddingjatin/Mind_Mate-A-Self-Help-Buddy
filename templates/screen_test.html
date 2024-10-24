@@ -1,0 +1,250 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+.container{
+  margin-top:120px;
+}
+.screen-form {
+  margin-top: 20px;
+}
+.card{
+  margin:20px 0 20px 0;
+  max-width: 375px;
+}
+{% endblock %}
+{% block content %}
+<div class='container'>
+  <h2>Depression Screening Test</h2>
+  <h5><i>Note : These tests are not accurate and you can locate and consult a mental health expert for through and accurate diagnosis.</i></h5>
+<form class="screen-form">
+<fieldset class="form-group">
+    <p><b>Little interest or pleasure in doing things</b></p>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="1" id="optionsRadios1" value="10" checked>
+        Not at all
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="1" id="optionsRadios2" value="20">
+        Several days
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="1" id="optionsRadios3" value="30">
+        More than half of the days
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="1" id="optionsRadios4" value="40">
+        Nearly every day
+      </label>
+    </div>
+  </fieldset>
+</form>
+  <form>
+  <fieldset class="form-group">
+      <p><b>Feeling down or depressed or hopeless</b></p>    
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="2" id="optionsRadios1" value="10" checked>
+          Not at all
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="2" id="optionsRadios2" value="20">
+          Several days
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="2" id="optionsRadios3" value="30">
+          More than half of the days
+        </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="2" id="optionsRadios4" value="40">
+          Nearly every day
+        </label>
+      </div>
+    </fieldset>
+  </form>
+    <form>
+    <fieldset class="form-group">
+        <p><b>Trouble sleeping or sleeping too much</b></p>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="3" id="optionsRadios1" value="10" checked>
+            Not at all
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="3" id="optionsRadios2" value="20">
+            Several days
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="3" id="optionsRadios3" value="30">
+            More than half of the days
+          </label>
+        </div>
+        <div class="form-check">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="3" id="optionsRadios4" value="40">
+            Nearly every day
+          </label>
+        </div>
+      </fieldset>
+    </form>
+      <form>
+      <fieldset class="form-group">
+          <p><b>Poor apetite or over-eating</b></p>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="4" id="optionsRadios1" value="10" checked>
+              Not at all
+            </label>
+          </div>
+          <div class="form-check">
+          <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="4" id="optionsRadios2" value="20">
+              Several days
+            </label>
+          </div>
+          <div class="form-check">
+          <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="4" id="optionsRadios3" value="30">
+              More than half of the days
+            </label>
+          </div>
+          <div class="form-check">
+          <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="4" id="optionsRadios4" value="40">
+              Nearly every day
+            </label>
+          </div>
+        </fieldset>
+      </form>
+        <form>
+        <fieldset class="form-group">
+            <p><b>Trouble concentrating on things, such as reading the newspaper or watching television</b></p>          
+            <div class="form-check">              
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="5" id="optionsRadios1" value="10" checked>
+                Not at all
+              </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="5" id="optionsRadios2" value="20">
+                Several days
+              </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="5" id="optionsRadios3" value="30">
+                More than half of the days
+              </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="5" id="optionsRadios4" value="40">
+                Nearly every day
+              </label>
+            </div>
+          </fieldset>
+        </form>
+          <form>
+          <fieldset class="form-group">
+              <p><b>Thoughts that you would be better off dead, or of hurting yourself</b></p>            
+              <div class="form-check">                
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="6" id="optionsRadios1" value="10" checked>
+                  Not at all
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="6" id="optionsRadios2" value="20">
+                  Several days
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="6" id="optionsRadios3" value="30">
+                  More than half of the days
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="6" id="optionsRadios4" value="40">
+                  Nearly every day
+                </label>
+              </div>
+            </fieldset>
+          </form>
+            <form>
+            <fieldset class="form-group">
+                <p><b>Feeling bad about yourself - or that you are a failure or have let yourself or your family down</b></p>              
+                <div class="form-check">                  
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="7" id="optionsRadios1" value="10" checked>
+                    Not at all
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="7" id="optionsRadios2" value="20">
+                    Several days
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="7" id="optionsRadios3" value="30">
+                    More than half of the days
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="7" id="optionsRadios4" value="40">
+                    Nearly every day
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+   <button type="submit" class="btn btn-primary srceenTest" id="srceenTest">Submit</button>
+   <div class="card">
+     <div class="card-body">
+   <span id="Score"></span>
+ </div>
+ </div>
+</form>
+</div>
+{% endblock %}
+{% block script %}
+<script>
+document.getElementById('srceenTest').addEventListener('click',function(){
+  var score = [];
+  for(i=1;i<=7;i++){
+    let t = document.getElementsByName(String(i));
+    t.forEach(radio=>{if(radio.checked) score.push(parseInt(radio.value))});
+  }
+  console.log(score);
+  const sumScore = (accumulator, currentValue) => accumulator + currentValue;
+  const min  = 70;
+  const max = 280;
+  const total =score.reduce(sumScore);
+  console.log(total);
+  const finalScore= ((total-min)/(max-min))*100;
+  console.log(parseInt(finalScore));
+  document.getElementById('Score').innerHTML ='The Percentage shows level of Depression : '+String(parseInt(finalScore))+'%';
+})
+</script>
+{% endblock %}

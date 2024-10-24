@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-inverse fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+
+     <div class="collapse navbar-collapse" id="navbarCollapse">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+           <a class="nav-link" href={% url 'home' %}>Home <span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href={% url 'screen_test' %}>Diagnosis</a>
+         </li>
+
+           {% if user.is_authenticated %}
+           <li class="nav-item">
+             <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="{% url 'logout' %}?next=/">Logout</a>
+           </li>
+           {% else %}
+           <li class="nav-item">
+             <a class="nav-link" href={% url 'register' %}>Register/Login</a>
+           </li>
+           {% endif %}
+           <li class="nav-item">
+             <a class="nav-link" href={% url 'viewCBT' %}>CBT therapy</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href={% url 'locate' %}>Find Nearest center</a>
+           </li>
+
+       </ul>
+     </div>
+ </nav>
