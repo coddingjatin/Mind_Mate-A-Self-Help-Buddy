@@ -1,4 +1,4 @@
-# 🧠 Mind Mate – Mental Health Companion
+# 🧠 Mind Mate-A Self Help & Mental Health Companion
 
 **Mind Mate** is a web-based platform designed to assist individuals in recognizing, understanding, and managing **depression** through AI-powered tools, CBT-based therapy, and other engaging activities. Basically we had designed a website, where indivuals can get initial support from our platform, therapist, chatbot, This project was developed by a me and my amazing team members during **Enkryptia – The Hackathon**, held at **Government Polytechnic Nagpur**.
 
